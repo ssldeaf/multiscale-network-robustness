@@ -1,0 +1,10 @@
+# Основная установка: pip install -e ".[dev]"   (см. README)
+# Этот файл — минимальные версии. Точные версии закрепить после установки:
+#   pip freeze > requirements-lock.txt
+numpy>=1.24
+scipy>=1.10
+networkx>=3.2
+matplotlib>=3.7
+pytest>=7
+# фаза V (ML): scikit-learn>=1.3, pandas>=2.0   -> pip install -e ".[ml]"
+# водопроводные сети: wntr>=1.0                 -> pip install -e ".[wdn]"

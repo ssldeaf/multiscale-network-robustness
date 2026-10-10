@@ -1,0 +1,1 @@
+network,source_url,file,sha256,selection_rule,n,m,components,lcc_fraction,n_junctions,n_tanks,n_reservoirs,n_pipes,n_pumps,n_valves,n_closed_links,n_parallel_merged,n_self_loops,frac_degree2,contracted_nodes,contracted_loops,contracted_merged,notes

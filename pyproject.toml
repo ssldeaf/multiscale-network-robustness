@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multiscale-network-robustness"
+version = "0.1.0"
+description = "Structural robustness of networks under random failures: percolation baseline, box-covering, model ladder (bachelor thesis, NUST MISIS)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "networkx>=3.2",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+ml = ["scikit-learn>=1.3", "pandas>=2.0"]
+wdn = ["wntr>=1.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

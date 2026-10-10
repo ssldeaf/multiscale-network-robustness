@@ -1,0 +1,20 @@
+# окружение
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# результаты: в git — только README и явно отобранные итоговые рисунки
+results/*
+!results/README.md
+!results/first_curve.png
+
+# сырые файлы водопроводных сетей не коммитим: источник и SHA-256 — в data/wdn/manifest.csv
+data/wdn/raw/
